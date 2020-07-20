@@ -43,4 +43,4 @@ if (message.content.startsWith(adminprefix + 'sa')) {
 
 
 
-client.login("NDY5MTAyNzg0Nzg5MzQ4MzYy.XxX6Pg.wFOJZJSQ85LiT7m2J6rUJ7I8Wuw");
+client.login(process.env.TOKEN);
