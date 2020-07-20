@@ -1,18 +1,18 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const adminprefix = "/";
+const adminprefix = "a!";
 const developers = ['469102784789348362'];
 
-console.log("Logged in Succsefully");
+console.log("Randy ");
 
 client.on('ready', () => {
-    console.log(`Logged as ${client.user.tag}By : MERO`)
+    console.log(`Logged as ${client.user.tag}By : Randy`)
 })
 
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
-  if (message.content.startsWith(adminprefix + 'play')) {
+  if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
       message.channel.send(`تم تغيير البلاينق الى   ${argresult}`)
   } else 
@@ -28,7 +28,7 @@ client.on('message', message => {
       message.channel.send(`تَم تغيير الليسينينق الى   ${argresult}`)
   } else
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/MERO");
+    client.user.setGame(argresult, "https://www.twitch.tv/Randy");
       message.channel.send(`تم تغييرك حالتك بالتويتش الى   ${argresult}`)
   }
   if (message.content.startsWith(adminprefix + 'sn')) {
@@ -43,4 +43,4 @@ if (message.content.startsWith(adminprefix + 'sa')) {
 
 
 
-client.login(process.env.TOKEN);
+client.login("NDY5MTAyNzg0Nzg5MzQ4MzYy.Dt2Yyw.MrEvmniRKO9yqaFSbPr2WSgXTXM");
